@@ -19,7 +19,11 @@
   --font-sans: 'Inter', sans-serif;
 }
 
-html {
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
   scroll-behavior: smooth;
 }
 
@@ -27,7 +31,6 @@ body {
   background-color: var(--color-bg-primary);
   color: #ffffff;
   font-family: var(--font-sans);
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -444,8 +447,8 @@ body {
   }
   
   .swiper-pagination-authority .swiper-pagination-bullet {
-    background-color: #8f6c1e !important;
-    opacity: 0.35;
+    background-color: #000000 !important;
+    opacity: 0.3;
     width: 8px;
     height: 8px;
     margin: 0 !important;
@@ -454,7 +457,7 @@ body {
   }
 
   .swiper-pagination-authority .swiper-pagination-bullet-active {
-    background-color: var(--color-gold-primary) !important;
+    background-color: #000000 !important;
     opacity: 1;
     width: 24px; /* Formato de pílula alongada para o bullet ativo */
     border-radius: 4px;

@@ -151,20 +151,28 @@ const testimonialGroup2Html = `
 // Setup HTML Skeleton
 document.querySelector('#app').innerHTML = `
   <!-- Hero Section (No Header) -->
-  <section class="min-h-screen flex items-center pt-28 pb-28 bg-black relative overflow-hidden hero-section" id="home">
+  <section class="min-h-screen flex items-center pt-28 pb-28 bg-black relative overflow-hidden hero-section max-lg:flex-col max-lg:pt-0 max-lg:pb-16" id="home">
     <!-- Background Watermarks -->
     <div class="watermark-vertical wm-left">JOHNY</div>
     <div class="watermark-vertical wm-right">LUXO</div>
  
-    <picture>
-      <source media="(max-width: 992px)" srcset="${johnyHeroMobileImg}" />
-      <img src="${johnyImg}" alt="Johny Corretor" class="absolute top-0 left-0 w-full h-full object-cover object-right z-1 pointer-events-none max-lg:object-center max-lg:opacity-65" />
-    </picture>
+    <!-- Mobile Image Block (Visible only on mobile/tablet) -->
+    <div class="relative w-full lg:hidden z-1">
+      <picture class="w-full">
+        <source media="(max-width: 992px)" srcset="${johnyHeroMobileImg}" />
+        <img src="${johnyHeroMobileImg}" alt="Johny Corretor" class="w-full h-[40vh] object-cover object-top" />
+      </picture>
+      <!-- Premium bottom gradient fade to black -->
+      <div class="absolute inset-x-0 bottom-[-1px] h-26 bg-gradient-to-t from-black via-black/60 to-transparent z-2 pointer-events-none"></div>
+    </div>
+
+    <!-- Desktop Image -->
+    <img src="${johnyImg}" alt="Johny Corretor" class="absolute top-0 left-0 w-full h-full object-cover object-right z-1 pointer-events-none max-lg:hidden" />
     
     <div class="container mx-auto px-6 relative z-[3] w-full">
       <div class="max-w-[600px] relative max-lg:mx-auto max-lg:text-center max-lg:max-w-[500px]">
         <!-- Logo inside Hero content flow to prevent misalignment -->
-        <div class="flex items-center justify-between mb-1.5 max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:gap-3 max-lg:mx-auto max-lg:mb-6">
+        <div class="flex items-center justify-between mb-1.5 max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:gap-3 max-lg:mx-auto max-lg:mb-6 max-lg:mt-2">
           <div class="flex items-center">
             <svg class="w-21 h-21 filter drop-shadow-[0_0_4px_var(--color-gold-glow)]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M25 35L38 48L50 28L62 48L75 35L70 65H30L25 35Z" fill="url(#gold-gradient-hero)" />
@@ -324,7 +332,7 @@ document.querySelector('#app').innerHTML = `
   </div>
  
   <!-- Featured Properties Section (Integrado com Mock API do Instagram) -->
-  <section class="py-28 relative bg-black" id="properties">
+  <section class="py-28 relative bg-black overflow-hidden" id="properties">
     <!-- Background Watermark -->
     <div class="watermark-vertical wm-left" style="top: auto; bottom: 5%; font-size: clamp(60px, 8vw, 110px); color: rgba(212,175,55,0.02);">INSTAGRAM</div>
  
@@ -457,7 +465,7 @@ document.querySelector('#app').innerHTML = `
   </section>
  
   <!-- Authority Section (Yellow Color Blocked - "O Que Você Vai Aprender" style) -->
-  <section class="py-28 relative bg-gradient-to-br from-gold-light via-gold-primary to-gold-dark text-[#1c1912] z-5 border-y border-[rgba(0,0,0,0.05)]" id="why-johny">
+  <section class="py-28 relative bg-gradient-to-br from-gold-light via-gold-primary to-gold-dark text-[#1c1912] z-5 border-y border-[rgba(0,0,0,0.05)] overflow-hidden" id="why-johny">
     <div class="container mx-auto px-6 relative z-10 max-w-[1280px]">
       <div data-aos="fade-up" class="text-center max-w-[750px] mx-auto mb-[70px] z-10 relative">
         <span class="text-[#1c1912] opacity-80 text-[13px] font-extrabold tracking-[0.25em] uppercase mb-4 block">Liderança & Confiança</span>
@@ -466,7 +474,7 @@ document.querySelector('#app').innerHTML = `
       </div>
       
       <!-- Swiper Container -->
-      <div class="swiper swiper-authority w-full overflow-visible">
+      <div class="swiper swiper-authority w-full overflow-hidden lg:overflow-visible">
         <div class="authority-grid swiper-wrapper max-lg:flex max-lg:gap-0 lg:grid lg:grid-cols-4 lg:gap-6 lg:items-stretch">
           <!-- Card 1: Wide (Marketing Digital Dominante with Authority Badge) -->
           <div data-aos="fade-up" data-aos-delay="0" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-2 lg:flex-col lg:items-start lg:justify-start lg:gap-5 max-lg:w-[85%] bento-card bento-card-wide-1">
@@ -574,7 +582,7 @@ document.querySelector('#app').innerHTML = `
     </div>
   </section>
  
-  <section class="py-28 relative about-section-bg" id="about">
+  <section class="py-28 relative about-section-bg overflow-hidden" id="about">
     <!-- Overlay to ensure text readability -->
     <div class="absolute inset-0 bg-black/60 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/45 lg:to-black/10 z-1"></div>
     <!-- Background Watermark -->
@@ -622,7 +630,7 @@ document.querySelector('#app').innerHTML = `
   </section>
  
   <!-- Contact Form Section -->
-  <section class="py-28 relative bg-bg-secondary border-b border-white/5" id="contact">
+  <section class="py-28 relative bg-bg-secondary border-b border-white/5 overflow-hidden" id="contact">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-12 max-lg:gap-10">
         <div data-aos="fade-right" class="flex flex-col justify-between max-lg:gap-6">
