@@ -1,0 +1,588 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold-primary: #cca43b;
+  --color-gold-light: #dfba5d;
+  --color-gold-dark: #8f6c1e;
+  --color-gold-glow: rgba(204, 164, 59, 0.2);
+  --color-gold-glow-strong: rgba(204, 164, 59, 0.45);
+  
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #050505;
+  --color-bg-card: #080808;
+  --color-bg-input: #0c0c0c;
+  
+  --color-border-gold: rgba(204, 164, 59, 0.15);
+  --color-border-gold-focus: rgba(204, 164, 59, 0.8);
+  
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hero Section Vignette Overlay */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  background: 
+    /* Left edge fade */
+    linear-gradient(to right, #000000 0%, transparent 20%),
+    /* Right edge fade */
+    linear-gradient(to left, #000000 0%, transparent 20%),
+    /* Bottom edge fade */
+    linear-gradient(to top, #000000 0%, transparent 25%);
+}
+
+/* Custom Outlined Vertical Watermarks */
+.watermark-vertical {
+  position: absolute;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size: clamp(80px, 15vw, 180px);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(212, 175, 55, 0.03);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.wm-left {
+  left: 3%;
+  top: 15%;
+}
+
+.wm-right {
+  right: 3%;
+  bottom: 15%;
+}
+
+/* ==========================================================================
+   Ticker Ribbons (Faixas Inclinadas com Efeito 3D)
+   ========================================================================== */
+
+.ticker-ribbons-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  margin-top: -30px; /* Soft overlap transition with Hero gradient */
+  margin-bottom: 20px;
+}
+
+.ticker-ribbon {
+  position: absolute;
+  width: 120%; /* Offset overflow for rotated bounds */
+  left: -10%;
+  padding: 16px 0;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Foreground ribbon: tilted down, sharp focus */
+.ribbon-fg {
+  background-color: var(--color-gold-primary); /* Brand gold color */
+  transform: rotate(-3deg);
+  z-index: 2;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Background ribbon: tilted up, blurred crossing */
+.ribbon-bg {
+  background-color: var(--color-gold-primary); /* Brand gold color (yellow) */
+  transform: rotate(3deg);
+  z-index: 1;
+  filter: blur(4px);
+  opacity: 0.55; /* Keep opacity lower to maintain background blur and depth */
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Common style for yellow ribbons with black text */
+.ribbon-fg .ticker-group span,
+.ribbon-bg .ticker-group span {
+  color: #000000; /* Black text */
+}
+
+.ribbon-fg .gold-diamond,
+.ribbon-bg .gold-diamond {
+  color: #000000; /* Black diamonds */
+  text-shadow: none;
+}
+
+/* Infinite marquee track alignment */
+.ticker-track {
+  display: flex;
+  width: max-content;
+  gap: 30px;
+}
+
+.track-left {
+  animation: ticker-slide-left 35s linear infinite;
+}
+
+.track-right {
+  animation: ticker-slide-right 40s linear infinite;
+}
+
+.ticker-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-shrink: 0;
+}
+
+.ticker-group span {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.ribbon-bg .ticker-group span {
+  font-size: 13px;
+}
+
+.gold-diamond {
+  color: var(--color-gold-primary);
+  font-size: 16px;
+  text-shadow: 0 0 5px var(--color-gold-glow);
+}
+
+/* Keyframes for seamless looping translation */
+@keyframes ticker-slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes ticker-slide-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Responsive design overrides for ticker ribbons */
+@media (max-width: 992px) {
+  .ticker-ribbons-wrapper {
+    height: 160px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  .ticker-group span {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+  .ribbon-bg .ticker-group span {
+    font-size: 10px;
+  }
+  .gold-diamond {
+    font-size: 12px;
+  }
+  .ticker-ribbon {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .ticker-ribbons-wrapper {
+    height: 140px;
+  }
+}
+
+/* ==========================================================================
+   Testimonials / Social Proof (Infinite Marquee Loop Edge-to-Edge)
+   ========================================================================== */
+
+.testimonials-section {
+  position: relative;
+}
+
+.testimonials-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  background: 
+    /* Left edge fade */
+    linear-gradient(to right, var(--color-bg-secondary) 0%, transparent 20%),
+    /* Right edge fade */
+    linear-gradient(to left, var(--color-bg-secondary) 0%, transparent 20%);
+}
+
+.marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.marquee-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.marquee-track {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+  width: max-content;
+}
+
+.marquee-left {
+  animation: scroll-left 150s linear infinite;
+}
+
+.marquee-right {
+  animation: scroll-right 150s linear infinite;
+  transform: translateX(calc(-50% - 12px));
+}
+
+.marquee-group {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card-marquee {
+  width: 380px;
+  height: 210px;
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-gold);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.testimonial-quote-marquee {
+  font-size: 13.5px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.testimonial-author-marquee {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--color-border-gold);
+  flex-shrink: 0;
+}
+
+.testimonial-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-author-name {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.testimonial-author-role {
+  font-size: 11px;
+  color: var(--color-gold-primary);
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Animations */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(calc(-50% - 12px)); }
+  100% { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card-marquee {
+    width: 290px;
+    height: 175px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .testimonial-quote-marquee {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .testimonial-avatar {
+    width: 36px;
+    height: 36px;
+  }
+  .testimonial-author-name {
+    font-size: 13px;
+  }
+  .testimonial-author-role {
+    font-size: 10px;
+  }
+}
+
+/* ==========================================================================
+   Swiper Mobile Carousel (Seção Liderança & Confiança)
+   ========================================================================== */
+
+.swiper-authority {
+  width: 100%;
+  overflow: visible; /* Permite exibir sombras dos cards bento sem cortes */
+}
+
+/* Desktop: desativa flexbox do Swiper e força o layout original em Bento Grid */
+@media (min-width: 992px) {
+  .swiper-authority .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+    transform: none !important;
+    width: 100% !important;
+  }
+  .swiper-authority .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+  }
+  .swiper-pagination-authority {
+    display: none !important;
+  }
+}
+
+/* Mobile: ativa o carrossel, ajusta largura e estilo de paginação */
+@media (max-width: 992px) {
+  .swiper-authority {
+    width: calc(100% + 48px); /* Sangria nas laterais para alinhar com o viewport */
+    margin-left: -24px;
+    padding: 10px 24px 60px 24px !important; /* Espaço para as bolinhas no rodapé */
+    overflow: hidden;
+  }
+  
+  .swiper-authority .swiper-wrapper {
+    display: flex !important;
+    gap: 0 !important; /* Controlado pelo spaceBetween do Swiper no JS */
+  }
+
+  .swiper-authority .swiper-slide {
+    width: 85% !important; /* Efeito "peeking" */
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  /* Paginação Customizada do Swiper (bullets) conforme imagem do anexo */
+  .swiper-pagination-authority {
+    bottom: 20px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .swiper-pagination-authority .swiper-pagination-bullet {
+    background-color: #8f6c1e !important;
+    opacity: 0.35;
+    width: 8px;
+    height: 8px;
+    margin: 0 !important;
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s, background-color 0.3s;
+    border-radius: 50%;
+  }
+
+  .swiper-pagination-authority .swiper-pagination-bullet-active {
+    background-color: var(--color-gold-primary) !important;
+    opacity: 1;
+    width: 24px; /* Formato de pílula alongada para o bullet ativo */
+    border-radius: 4px;
+  }
+}
+
+/* About Section Responsive Background */
+.about-section-bg {
+  background-image: url('./assets/johny-about-mobile.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .about-section-bg {
+    background-image: url('./assets/johny-about.png');
+  }
+}
+
+/* Shimmer animation for premium buttons */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+/* ==========================================================================
+   Bento Cards Hover Effects (Liderança & Confiança Section)
+   ========================================================================== */
+
+.bento-card {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform, box-shadow, border-color;
+}
+
+.bento-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--color-gold-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+              0 0 30px rgba(204, 164, 59, 0.25);
+  background-color: #0c0c0c; /* Slight background brighten */
+}
+
+/* Sub-element animations inside bento-card on hover */
+.bento-card .w-12, 
+.bento-card .w-\[115px\] {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bento-card:hover .w-12 {
+  transform: scale(1.1) rotate(3deg);
+  background-color: rgba(204, 164, 59, 0.25);
+  box-shadow: 0 0 15px rgba(204, 164, 59, 0.2);
+}
+
+.bento-card:hover .w-\[115px\] {
+  transform: scale(1.08) rotate(-3deg);
+  box-shadow: 0 0 25px rgba(204, 164, 59, 0.4);
+}
+
+.bento-card h3, 
+.bento-card h4 {
+  transition: color 0.3s ease;
+}
+
+.bento-card:hover h3, 
+.bento-card:hover h4 {
+  color: var(--color-gold-light);
+}
+
+/* Contact Info Cards with rounded gold top border and hover effect */
+.contact-info-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-gold);
+  border-top: 1.5px solid var(--color-gold-primary);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform, box-shadow, border-color;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(204, 164, 59, 0.3);
+  border-top-color: var(--color-gold-light);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4),
+              0 0 20px rgba(204, 164, 59, 0.15);
+  background-color: #0c0c0c;
+}
+
+/* Instagram Post Cards with hover effect */
+.insta-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border-gold);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              background-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform, box-shadow, border-color;
+}
+
+.insta-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-gold-primary);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5),
+              0 0 25px rgba(204, 164, 59, 0.2);
+  background-color: #0c0c0c;
+}
+
+.insta-card .aspect-square img {
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.insta-card:hover .aspect-square img {
+  transform: scale(1.05);
+}
+
