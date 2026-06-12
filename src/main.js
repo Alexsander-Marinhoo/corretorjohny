@@ -167,6 +167,101 @@ document.querySelector('#app').innerHTML = `
       <div class="absolute inset-x-0 bottom-[-1px] h-26 bg-gradient-to-t from-black via-black/60 to-transparent z-2 pointer-events-none"></div>
     </div>
 
+    <!-- Mobile-only Crossing Ribbons (placed directly under the mobile image) -->
+    <div class="ticker-ribbons-wrapper mobile-only">
+      <!-- Faixa de Fundo (Blurred & Crossing) -->
+      <div class="ticker-ribbon ribbon-bg">
+        <div class="ticker-track track-right">
+          <div class="ticker-group">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+          <!-- Duplicados para transição infinita e sem cortes -->
+          <div class="ticker-group" aria-hidden="true">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
+            <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
+            <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+            <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
+          </div>
+        </div>
+      </div>
+   
+      <!-- Faixa de Primeiro Plano (Sharp) -->
+      <div class="ticker-ribbon ribbon-fg">
+        <div class="ticker-track track-left">
+          <div class="ticker-group">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+          <!-- Duplicados para transição infinita e sem cortes -->
+          <div class="ticker-group" aria-hidden="true">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+          <div class="ticker-group" aria-hidden="true">
+            <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+            <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+            <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+            <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+            <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Desktop Image -->
     <img src="${johnyImg}" alt="Johny Corretor" class="absolute top-0 left-0 w-full h-full object-cover object-right z-1 pointer-events-none max-lg:hidden" />
     
@@ -213,7 +308,7 @@ document.querySelector('#app').innerHTML = `
             <input type="tel" id="whatsapp" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="Seu Número de Whatsapp" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
           </div>
           <button data-aos="fade-up" data-aos-delay="400" type="submit" class="w-full p-[18px] text-sm font-extrabold tracking-[0.08em] uppercase rounded-full bg-[#25D366] text-white flex items-center justify-center gap-2.5 cursor-pointer transition-all duration-300 border-none shadow-[0_4px_15px_rgba(37,211,102,0.25)] hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(37,211,102,0.4)]">
-            QUERO ENCONTRAR MEU IMÓVEL <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 510 512.459" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M435.689 74.468C387.754 26.471 324 .025 256.071 0 116.098 0 2.18 113.906 2.131 253.916c-.024 44.758 11.677 88.445 33.898 126.946L0 512.459l134.617-35.311c37.087 20.238 78.85 30.891 121.345 30.903h.109c139.949 0 253.88-113.917 253.928-253.928.024-67.855-26.361-131.645-74.31-179.643v-.012zm-179.618 390.7h-.085c-37.868-.011-75.016-10.192-107.428-29.417l-7.707-4.577-79.886 20.953 21.32-77.889-5.017-7.987c-21.125-33.605-32.29-72.447-32.266-112.322.049-116.366 94.729-211.046 211.155-211.046 56.373.025 109.364 22.003 149.214 61.903 39.853 39.888 61.781 92.927 61.757 149.313-.05 116.377-94.728 211.058-211.057 211.058v.011zm115.768-158.067c-6.344-3.178-37.537-18.52-43.358-20.639-5.82-2.119-10.044-3.177-14.27 3.178-4.225 6.357-16.388 20.651-20.09 24.875-3.702 4.238-7.403 4.762-13.747 1.583-6.343-3.178-26.787-9.874-51.029-31.487-18.86-16.827-31.597-37.598-35.297-43.955-3.702-6.355-.39-9.789 2.775-12.943 2.849-2.848 6.344-7.414 9.522-11.116s4.225-6.355 6.343-10.581c2.12-4.238 1.06-7.937-.522-11.117-1.584-3.177-14.271-34.409-19.568-47.108-5.151-12.37-10.385-10.69-14.269-10.897-3.703-.183-7.927-.219-12.164-.219s-11.105 1.582-16.925 7.939c-5.82 6.354-22.209 21.709-22.209 52.927 0 31.22 22.733 61.405 25.911 65.642 3.177 4.237 44.745 68.318 108.389 95.812 15.135 6.538 26.957 10.446 36.175 13.368 15.196 4.834 29.027 4.153 39.96 2.52 12.19-1.825 37.54-15.353 42.824-30.172 5.283-14.818 5.283-27.529 3.701-30.172-1.582-2.641-5.819-4.237-12.163-7.414l.011-.024z"/></svg>
+            QUERO ENCONTRAR MEU IMÓVEL <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           </button>
         </form>
   
@@ -230,7 +325,7 @@ document.querySelector('#app').innerHTML = `
     </div>
  
     <!-- Down Scroll Arrow -->
-    <div class="absolute bottom-7.5 left-1/2 -translate-x-1/2 z-10">
+    <div class="absolute bottom-7.5 left-1/2 -translate-x-1/2 z-10 max-lg:hidden">
       <a href="#properties" class="w-[50px] h-[50px] rounded-full bg-gold-primary text-black flex items-center justify-center shadow-[0_0_15px_rgba(204,164,59,0.4)] animate-bounce" aria-label="Role para baixo">
         <i data-lucide="arrow-down" class="w-[22px] h-[22px]"></i>
       </a>
@@ -238,7 +333,7 @@ document.querySelector('#app').innerHTML = `
   </section>
  
   <!-- Marquee Ribbons Divider (Elemento do Anexo) -->
-  <div class="ticker-ribbons-wrapper">
+  <div class="ticker-ribbons-wrapper desktop-only">
     <!-- Faixa de Fundo (Blurred & Crossing) -->
     <div class="ticker-ribbon ribbon-bg">
       <div class="ticker-track track-right">
@@ -458,7 +553,7 @@ document.querySelector('#app').innerHTML = `
         <a href="https://www.instagram.com/corretorjohny/" target="_blank" class="relative overflow-hidden inline-flex items-center justify-center py-4 px-9 font-black text-xs tracking-[0.12em] uppercase rounded-full transition-all duration-300 gap-2.5 bg-gradient-to-r from-gold-dark via-gold-primary to-gold-light text-black shadow-[0_4px_20px_rgba(204,164,59,0.4)] hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(204,164,59,0.6)] group">
           <!-- Shimmer reflection effect -->
           <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-shimmer"></span>
-          <svg class="w-4.5 h-4.5 shrink-0 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 132.004 132" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29-19.79-.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"/></svg>
+          <svg class="w-4.5 h-4.5 shrink-0 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           <span>ME SEGUIR NO INSTAGRAM @CORRETORJOHNY</span>
         </a>
       </div>
@@ -627,9 +722,9 @@ document.querySelector('#app').innerHTML = `
             </div>
           </div>
           <div data-aos="fade-up" data-aos-delay="250" class="flex gap-4 max-sm:flex-col">
-            <a href="#contact" class="inline-flex items-center justify-center py-3.5 px-8 font-extrabold text-xs tracking-wider uppercase rounded-full transition-all duration-300 gap-2.5 bg-[#25D366] text-white shadow-[0_4px_15px_rgba(37,211,102,0.25)] hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(37,211,102,0.4)] max-sm:w-full">FALE COMIGO AGORA <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 510 512.459" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M435.689 74.468C387.754 26.471 324 .025 256.071 0 116.098 0 2.18 113.906 2.131 253.916c-.024 44.758 11.677 88.445 33.898 126.946L0 512.459l134.617-35.311c37.087 20.238 78.85 30.891 121.345 30.903h.109c139.949 0 253.88-113.917 253.928-253.928.024-67.855-26.361-131.645-74.31-179.643v-.012zm-179.618 390.7h-.085c-37.868-.011-75.016-10.192-107.428-29.417l-7.707-4.577-79.886 20.953 21.32-77.889-5.017-7.987c-21.125-33.605-32.29-72.447-32.266-112.322.049-116.366 94.729-211.046 211.155-211.046 56.373.025 109.364 22.003 149.214 61.903 39.853 39.888 61.781 92.927 61.757 149.313-.05 116.377-94.728 211.058-211.057 211.058v.011zm115.768-158.067c-6.344-3.178-37.537-18.52-43.358-20.639-5.82-2.119-10.044-3.177-14.27 3.178-4.225 6.357-16.388 20.651-20.09 24.875-3.702 4.238-7.403 4.762-13.747 1.583-6.343-3.178-26.787-9.874-51.029-31.487-18.86-16.827-31.597-37.598-35.297-43.955-3.702-6.355-.39-9.789 2.775-12.943 2.849-2.848 6.344-7.414 9.522-11.116s4.225-6.355 6.343-10.581c2.12-4.238 1.06-7.937-.522-11.117-1.584-3.177-14.271-34.409-19.568-47.108-5.151-12.37-10.385-10.69-14.269-10.897-3.703-.183-7.927-.219-12.164-.219s-11.105 1.582-16.925 7.939c-5.82 6.354-22.209 21.709-22.209 52.927 0 31.22 22.733 61.405 25.911 65.642 3.177 4.237 44.745 68.318 108.389 95.812 15.135 6.538 26.957 10.446 36.175 13.368 15.196 4.834 29.027 4.153 39.96 2.52 12.19-1.825 37.54-15.353 42.824-30.172 5.283-14.818 5.283-27.529 3.701-30.172-1.582-2.641-5.819-4.237-12.163-7.414l.011-.024z"/></svg></a>
+            <a href="#contact" class="inline-flex items-center justify-center py-3.5 px-8 font-extrabold text-xs tracking-wider uppercase rounded-full transition-all duration-300 gap-2.5 bg-[#25D366] text-white shadow-[0_4px_15px_rgba(37,211,102,0.25)] hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(37,211,102,0.4)] max-sm:w-full">FALE COMIGO AGORA <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
             <a href="https://www.instagram.com/corretorjohny/" target="_blank" class="inline-flex items-center justify-center py-3.5 px-8 font-extrabold text-xs tracking-wider uppercase rounded-full transition-all duration-300 gap-2.5 text-white border-2 border-gold-primary hover:bg-gold-primary hover:text-black hover:-translate-y-0.5 max-sm:w-full">
-              <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 132.004 132" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29-19.79-.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"/></svg> ME SEGUIR NO INSTAGRAM
+              <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> ME SEGUIR NO INSTAGRAM
             </a>
           </div>
         </div>
@@ -652,20 +747,28 @@ document.querySelector('#app').innerHTML = `
           </div>
           
           <div class="flex flex-col gap-4 mt-8">
-            <div class="flex items-center gap-4 p-5.5 rounded-2xl contact-info-card">
-              <div class="w-11 h-11 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-5 h-5"></i></div>
+            <a href="https://wa.me/5513988343158" target="_blank" class="flex items-center gap-4 p-5.5 rounded-2xl contact-info-card cursor-pointer transition-all duration-300">
+              <div class="w-11 h-11 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </div>
               <div>
                 <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-1 font-sans font-bold text-left">Telefone / WhatsApp</h4>
-                <p class="text-base text-white font-semibold text-left">(13) 99999-9999</p>
+                <p class="text-base text-white font-semibold text-left">(13) 98834-3158</p>
               </div>
-            </div>
-            <div class="flex items-center gap-4 p-5.5 rounded-2xl contact-info-card">
-              <div class="w-11 h-11 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center shrink-0"><i data-lucide="camera" class="w-5 h-5"></i></div>
+            </a>
+            <a href="https://www.instagram.com/corretorjohny/" target="_blank" class="flex items-center gap-4 p-5.5 rounded-2xl contact-info-card cursor-pointer transition-all duration-300">
+              <div class="w-11 h-11 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </div>
               <div>
                 <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-1 font-sans font-bold text-left">Instagram Oficial</h4>
-                <p class="text-base text-white font-semibold text-left"><a href="https://www.instagram.com/corretorjohny/" target="_blank" class="hover:text-gold-primary">@corretorjohny</a></p>
+                <p class="text-base text-white font-semibold text-left">@corretorjohny</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
  
@@ -678,14 +781,14 @@ document.querySelector('#app').innerHTML = `
               </div>
               <div class="mb-4 text-left">
                 <label for="c-phone" class="block text-[11px] text-gold-primary uppercase tracking-[0.08em] font-bold mb-2">WhatsApp</label>
-                <input type="tel" id="c-phone" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="Seu Número de Whatsapp" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
+                <input type="tel" id="c-phone" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="SEU NÚMERO DE WHATSAPP" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
               </div>
               <div class="mb-4 text-left">
                 <label for="c-message" class="block text-[11px] text-gold-primary uppercase tracking-[0.08em] font-bold mb-2">Como posso te ajudar?</label>
                 <textarea id="c-message" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)] h-32 resize-none" placeholder="COMO POSSO TE AJUDAR?" required></textarea>
               </div>
               <button type="submit" class="w-full py-4 px-8 text-sm font-extrabold tracking-[0.08em] uppercase rounded-full bg-[#25D366] text-white flex items-center justify-center gap-2.5 cursor-pointer transition-all duration-300 border-none shadow-[0_4px_15px_rgba(37,211,102,0.25)] hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(37,211,102,0.4)]">
-                FALAR DIRETAMENTE COMIGO <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 510 512.459" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M435.689 74.468C387.754 26.471 324 .025 256.071 0 116.098 0 2.18 113.906 2.131 253.916c-.024 44.758 11.677 88.445 33.898 126.946L0 512.459l134.617-35.311c37.087 20.238 78.85 30.891 121.345 30.903h.109c139.949 0 253.88-113.917 253.928-253.928.024-67.855-26.361-131.645-74.31-179.643v-.012zm-179.618 390.7h-.085c-37.868-.011-75.016-10.192-107.428-29.417l-7.707-4.577-79.886 20.953 21.32-77.889-5.017-7.987c-21.125-33.605-32.29-72.447-32.266-112.322.049-116.366 94.729-211.046 211.155-211.046 56.373.025 109.364 22.003 149.214 61.903 39.853 39.888 61.781 92.927 61.757 149.313-.05 116.377-94.728 211.058-211.057 211.058v.011zm115.768-158.067c-6.344-3.178-37.537-18.52-43.358-20.639-5.82-2.119-10.044-3.177-14.27 3.178-4.225 6.357-16.388 20.651-20.09 24.875-3.702 4.238-7.403 4.762-13.747 1.583-6.343-3.178-26.787-9.874-51.029-31.487-18.86-16.827-31.597-37.598-35.297-43.955-3.702-6.355-.39-9.789 2.775-12.943 2.849-2.848 6.344-7.414 9.522-11.116s4.225-6.355 6.343-10.581c2.12-4.238 1.06-7.937-.522-11.117-1.584-3.177-14.271-34.409-19.568-47.108-5.151-12.37-10.385-10.69-14.269-10.897-3.703-.183-7.927-.219-12.164-.219s-11.105 1.582-16.925 7.939c-5.82 6.354-22.209 21.709-22.209 52.927 0 31.22 22.733 61.405 25.911 65.642 3.177 4.237 44.745 68.318 108.389 95.812 15.135 6.538 26.957 10.446 36.175 13.368 15.196 4.834 29.027 4.153 39.96 2.52 12.19-1.825 37.54-15.353 42.824-30.172 5.283-14.818 5.283-27.529 3.701-30.172-1.582-2.641-5.819-4.237-12.163-7.414l.011-.024z"/></svg>
+                FALAR DIRETAMENTE COMIGO <svg class="w-4.5 h-4.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               </button>
             </form>
           </div>

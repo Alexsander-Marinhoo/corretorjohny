@@ -195,6 +195,9 @@ body {
 
 /* Responsive design overrides for ticker ribbons */
 @media (max-width: 992px) {
+  .ticker-ribbons-wrapper.desktop-only {
+    display: none !important;
+  }
   .ticker-ribbons-wrapper {
     height: 160px;
     margin-top: -10px;
@@ -218,6 +221,12 @@ body {
 @media (max-width: 576px) {
   .ticker-ribbons-wrapper {
     height: 140px;
+  }
+}
+
+@media (min-width: 993px) {
+  .ticker-ribbons-wrapper.mobile-only {
+    display: none !important;
   }
 }
 
@@ -541,11 +550,10 @@ body {
   color: var(--color-gold-light);
 }
 
-/* Contact Info Cards with rounded gold top border and hover effect */
+/* Contact Info Cards with hover effect */
 .contact-info-card {
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border-gold);
-  border-top: 1.5px solid var(--color-gold-primary);
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
               box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
               border-color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
@@ -555,8 +563,7 @@ body {
 
 .contact-info-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(204, 164, 59, 0.3);
-  border-top-color: var(--color-gold-light);
+  border-color: var(--color-gold-primary);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4),
               0 0 20px rgba(204, 164, 59, 0.15);
   background-color: #0c0c0c;
