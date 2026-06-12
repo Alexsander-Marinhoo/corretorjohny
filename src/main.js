@@ -42,7 +42,7 @@ import p4m from './assets/perfil-4m.jpg';
 const testimonialGroup1Html = `
           <!-- Card 1 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Assessoria impecável! Vendi minha cobertura rapidamente com o marketing do Johny."</p>
+            <p class="testimonial-quote-marquee">"Assessoria impecável! Vendi meu imóvel rapidamente com a divulgação do Johny."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p1m}" alt="Ricardo M. Silveira" />
@@ -68,7 +68,7 @@ const testimonialGroup1Html = `
           </div>
           <!-- Card 3 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Atendimento excelente. Encontramos nosso apto de frente para o mar facilmente."</p>
+            <p class="testimonial-quote-marquee">"Atendimento excelente. Encontramos nosso lar ideal pertinho da praia de forma muito simples."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p2f}" alt="Patrícia Lima" />
@@ -81,7 +81,7 @@ const testimonialGroup1Html = `
           </div>
           <!-- Card 4 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Conhecimento de mercado excepcional. O investimento valorizou muito rápido."</p>
+            <p class="testimonial-quote-marquee">"Conhecimento de mercado excepcional. O imóvel valorizou rápido e o processo de compra foi muito tranquilo."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p2m}" alt="Marcus Rocha" />
@@ -97,7 +97,7 @@ const testimonialGroup1Html = `
 const testimonialGroup2Html = `
           <!-- Card 5 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Parceria de sucesso! Agilidade impressionante em conectar nossa construtora a clientes de alto padrão."</p>
+            <p class="testimonial-quote-marquee">"Parceria de sucesso! Agilidade impressionante em conectar nossa construtora a clientes qualificados."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p3f}" alt="Mariana Costa" />
@@ -110,7 +110,7 @@ const testimonialGroup2Html = `
           </div>
           <!-- Card 6 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Como advogado, prezo pela segurança jurídica. A condução do Johny em transações complexas é exemplar."</p>
+            <p class="testimonial-quote-marquee">"Como advogado, prezo pela segurança jurídica. A condução do Johny em toda a documentação do contrato foi exemplar."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p3m}" alt="Rodrigo Lima" />
@@ -123,7 +123,7 @@ const testimonialGroup2Html = `
           </div>
           <!-- Card 7 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Atendimento exclusivo, discrição total e curadoria impecável de imóveis. Poupou muito nosso tempo."</p>
+            <p class="testimonial-quote-marquee">"Atendimento diferenciado, transparência e ótima seleção de imóveis. Poupou muito nosso tempo."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p4f}" alt="Larissa Souza" />
@@ -136,7 +136,7 @@ const testimonialGroup2Html = `
           </div>
           <!-- Card 8 -->
           <div class="testimonial-card-marquee">
-            <p class="testimonial-quote-marquee">"Buscávamos uma cobertura linear e o Johny nos apresentou opções fantásticas fora do mercado."</p>
+            <p class="testimonial-quote-marquee">"Buscávamos um imóvel moderno de 3 dormitórios e o Johny nos apresentou opções fantásticas."</p>
             <div class="testimonial-author-marquee">
               <div class="testimonial-avatar">
                 <img src="${p4m}" alt="Roberto Junior" />
@@ -155,7 +155,7 @@ document.querySelector('#app').innerHTML = `
   <section class="min-h-screen flex items-center pt-28 pb-28 bg-black relative overflow-hidden hero-section max-lg:flex-col max-lg:pt-0 max-lg:pb-16" id="home">
     <!-- Background Watermarks -->
     <div class="watermark-vertical wm-left">JOHNY</div>
-    <div class="watermark-vertical wm-right">LUXO</div>
+    <div class="watermark-vertical wm-right">LAR</div>
  
     <!-- Mobile Image Block (Visible only on mobile/tablet) -->
     <div class="relative w-full lg:hidden z-1">
@@ -187,21 +187,21 @@ document.querySelector('#app').innerHTML = `
               </defs>
             </svg>
             <div class="flex flex-col text-left max-lg:items-center max-lg:text-center">
-              <span class="font-sans font-extrabold text-lg tracking-[0.05em] text-white leading-tight">JOHNY CORRETOR</span>
-              <span class="font-sans text-[9px] tracking-[0.25em] text-gold-primary font-semibold mt-0.5">MERCADO DE LUXO</span>
+              <span class="font-sans font-extrabold text-xl tracking-[0.05em] text-white leading-tight">JOHNY CORRETOR</span>
+              <span class="font-sans text-[9px] tracking-[0.25em] text-gold-primary font-semibold mt-0.5">CASAS & APARTAMENTOS</span>
             </div>
           </div>
           <span class="text-[11px] text-gold-primary border border-border-gold py-1 px-2.5 rounded-full font-bold tracking-[0.05em] max-sm:hidden">CRECI 249849-F</span>
         </div>
  
         <div data-aos="fade-down" data-aos-duration="400" class="inline-flex items-center gap-2 bg-gold-primary/10 border border-border-gold py-1.5 px-4 rounded-full text-[11px] font-bold text-gold-primary tracking-[0.15em] mb-6 max-lg:mx-auto max-lg:mb-5">
-          <i data-lucide="award" class="w-3.5 h-3.5 text-gold-primary"></i> MINHA CURADORIA DE LUXO Nº 1 DE PRAIA GRANDE
+          <i data-lucide="award" class="w-3.5 h-3.5 text-gold-primary"></i> CURADORIA DE IMÓVEIS NA PRAIA GRANDE
         </div>
         <h1 data-aos="fade-up" data-aos-delay="100" class="text-[38px] lg:text-[56px] font-extrabold leading-none tracking-tight mb-5 text-white">
-          TRANSFORME SEU SUCESSO EM <span class="text-gold-primary">PATRIMÔNIO DE ALTO PADRÃO</span>
+          SEU NOVO LAR EM <span class="text-gold-primary">PRAIA GRANDE</span>
         </h1>
         <p data-aos="fade-up" data-aos-delay="200" class="text-base mb-7.5 max-w-[580px] font-light text-slate-300 max-lg:mx-auto">
-          Acesso exclusivo a coberturas lineares, penthouses e mansões off-market no Canto do Forte. Atendimento boutique com assessoria jurídica completa para investidores exigentes.
+          As melhores casas e apartamentos modernos em toda a Praia Grande. Seleção de imóveis prontos, confortáveis e com total segurança jurídica para sua família.
         </p>
         
         <!-- Lead Capture Form (Direct flow style, matching the reference image) -->
@@ -210,10 +210,10 @@ document.querySelector('#app').innerHTML = `
             <input type="text" id="name" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="Nome Completo" required />
           </div>
           <div data-aos="fade-up" data-aos-delay="350" class="mb-0">
-            <input type="tel" id="whatsapp" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="(XX) XXXXX-XXXX" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
+            <input type="tel" id="whatsapp" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="Seu Número de Whatsapp" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
           </div>
           <button data-aos="fade-up" data-aos-delay="400" type="submit" class="w-full p-[18px] text-sm font-extrabold tracking-[0.08em] uppercase rounded-full bg-gold-primary text-black flex items-center justify-center gap-2 cursor-pointer transition-all duration-300 border-none shadow-[0_4px_15px_rgba(204,164,59,0.25)] hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_0_40px_rgba(204,164,59,0.3)]">
-            AGENDAR MINHA CONSULTORIA EXCLUSIVA <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            QUERO ENCONTRAR MEU IMÓVEL <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
         </form>
   
@@ -243,41 +243,41 @@ document.querySelector('#app').innerHTML = `
     <div class="ticker-ribbon ribbon-bg">
       <div class="ticker-track track-right">
         <div class="ticker-group">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
         <!-- Duplicados para transição infinita e sem cortes -->
         <div class="ticker-group" aria-hidden="true">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group" aria-hidden="true">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group" aria-hidden="true">
-          <span>PRIVACIDADE & CONFIDENCIALIDADE</span> <span class="gold-diamond">♦</span>
+          <span>CONFORTO & PRATICIDADE</span> <span class="gold-diamond">♦</span>
           <span>SEGURANÇA JURÍDICA</span> <span class="gold-diamond">♦</span>
-          <span>INVESTIMENTOS SÓLIDOS</span> <span class="gold-diamond">♦</span>
-          <span>CURADORIA DE ALTO PADRÃO</span> <span class="gold-diamond">♦</span>
+          <span>MELHOR CUSTO-BENEFÍCIO</span> <span class="gold-diamond">♦</span>
+          <span>IMÓVEIS SELECIONADOS</span> <span class="gold-diamond">♦</span>
         </div>
       </div>
     </div>
@@ -286,47 +286,47 @@ document.querySelector('#app').innerHTML = `
     <div class="ticker-ribbon ribbon-fg">
       <div class="ticker-track track-left">
         <div class="ticker-group">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
         <!-- Duplicados para transição infinita e sem cortes -->
         <div class="ticker-group" aria-hidden="true">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group" aria-hidden="true">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
         <div class="ticker-group" aria-hidden="true">
-          <span>COBERTURAS EXCLUSIVAS</span> <span class="gold-diamond">♦</span>
-          <span>CANTO DO FORTE</span> <span class="gold-diamond">♦</span>
-          <span>PENTHOUSES OFF-MARKET</span> <span class="gold-diamond">♦</span>
-          <span>MERCADO DE LUXO</span> <span class="gold-diamond">♦</span>
-          <span>ATENDIMENTO BOUTIQUE</span> <span class="gold-diamond">♦</span>
+          <span>CASAS & APARTAMENTOS</span> <span class="gold-diamond">♦</span>
+          <span>PRAIA GRANDE</span> <span class="gold-diamond">♦</span>
+          <span>EXCELENTES LOCALIZAÇÕES</span> <span class="gold-diamond">♦</span>
+          <span>PRONTOS PARA MORAR</span> <span class="gold-diamond">♦</span>
+          <span>ATENDIMENTO EXCLUSIVO</span> <span class="gold-diamond">♦</span>
         </div>
       </div>
     </div>
@@ -341,7 +341,7 @@ document.querySelector('#app').innerHTML = `
       <div data-aos="fade-up" class="text-center max-w-[750px] mx-auto mb-[70px] z-10 relative">
         <span class="text-gold-primary text-[13px] font-bold tracking-[0.25em] uppercase mb-4 block">Minha Coleção Privada</span>
         <h2 class="text-[32px] md:text-[44px] font-extrabold mb-5 text-white tracking-tight leading-none">MEUS DESTAQUES NO INSTAGRAM</h2>
-        <p class="text-base text-slate-300 font-light">Acompanhe minhas visitas guiadas, bastidores e lançamentos de altíssimo padrão em tempo real no meu feed.</p>
+        <p class="text-base text-slate-300 font-light">Acompanhe minhas visitas guiadas, bastidores e oportunidades de imóveis modernos em tempo real no meu feed.</p>
       </div>
 
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 relative z-10">
@@ -367,7 +367,7 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[11px] md:text-xs font-bold text-white">❤️ 1.204 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Exclusividade de frente para o mar no Canto do Forte. Cobertura linear com piscina privativa e acabamento impecável. Agende sua consultoria comigo no link da bio! #PraiaGrande #AltoPadrao</p>
+            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Lindo apartamento mobiliado e decorado a poucos metros da praia no Canto do Forte. Conforto, modernidade e localização excelente. Agende sua visita comigo no link da bio! #PraiaGrande #ImovelModerno</p>
             <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 2 DIAS</span>
           </div>
         </a>
@@ -380,12 +380,12 @@ document.querySelector('#app').innerHTML = `
             </div>
             <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
               <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
-              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Canto do Forte, PG</span>
+              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Guilhermina, PG</span>
             </div>
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
           <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop2Img}" alt="Lumière Penthouse" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <img src="${prop2Img}" alt="Lumière Residence" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
               <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
             </div>
@@ -394,7 +394,7 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[11px] md:text-xs font-bold text-white">❤️ 874 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Sofisticação e a melhor vista do litoral paulista. Mais um empreendimento de alto padrão entregue com minha assessoria jurídica completa e personalizada. #CantoDoForte #Luxo</p>
+            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Apartamento moderno de 2 dormitórios com varanda gourmet na Guilhermina. Ideal para quem busca praticidade e lazer completo. Entregue com minha assessoria jurídica. #Guilhermina #PraiaGrande</p>
             <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 3 DIAS</span>
           </div>
         </a>
@@ -407,7 +407,7 @@ document.querySelector('#app').innerHTML = `
             </div>
             <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
               <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
-              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Guilhermina, PG</span>
+              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Aviação, PG</span>
             </div>
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
@@ -421,7 +421,7 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[11px] md:text-xs font-bold text-white">❤️ 956 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Seu novo estilo de vida começa aqui. Apartamento pronto para morar na Guilhermina com área de lazer completa e segurança total para sua família. #Guilhermina</p>
+            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Casa moderna em condomínio fechado na Aviação. Segurança para a família, quintal privativo e excelente iluminação. Vamos agendar uma visita? #Aviacao #PraiaGrande</p>
             <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 5 DIAS</span>
           </div>
         </a>
@@ -434,12 +434,12 @@ document.querySelector('#app').innerHTML = `
             </div>
             <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
               <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
-              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Canto do Forte, PG</span>
+              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Tupi, PG</span>
             </div>
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
           <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop4Img}" alt="Golden Gate Mansion" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <img src="${prop4Img}" alt="Golden Gate Concept" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
               <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
             </div>
@@ -448,7 +448,7 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[11px] md:text-xs font-bold text-white">❤️ 1.420 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Golden Gate Mansion: a definição de luxo e sofisticação em Praia Grande. Agende uma consultoria privativa comigo. #LuxuryHome #Broker</p>
+            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Sobrado amplo e planejado a poucas quadras do mar na Tupi. Perfeito para morar ou veranear com conforto e espaço. Fale comigo! #Tupi #PraiaGrande</p>
             <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 1 SEMANA</span>
           </div>
         </a>
@@ -470,8 +470,8 @@ document.querySelector('#app').innerHTML = `
     <div class="container mx-auto px-6 relative z-10 max-w-[1280px]">
       <div data-aos="fade-up" class="text-center max-w-[750px] mx-auto mb-[70px] z-10 relative">
         <span class="text-[#1c1912] opacity-80 text-[13px] font-extrabold tracking-[0.25em] uppercase mb-4 block">Liderança & Confiança</span>
-        <h2 class="text-[30px] md:text-[44px] font-extrabold mb-5 text-black tracking-tight leading-none">POR QUE CONFIAR SEU PATRIMÔNIO A QUEM LIDERA O MERCADO DE LUXO?</h2>
-        <p class="text-base text-[#2c261b] font-medium">Aliando minha curadoria de propriedades selecionadas à minha blindagem jurídica, asseguro sua tranquilidade e liquidez patrimonial.</p>
+        <h2 class="text-[30px] md:text-[44px] font-extrabold mb-5 text-black tracking-tight leading-none">POR QUE CONFIAR SEU NOVO LAR A QUEM ENTENDE DO MERCADO?</h2>
+        <p class="text-base text-[#2c261b] font-medium">Aliando minha seleção de excelentes imóveis à assessoria de ponta, asseguro sua total tranquilidade e o melhor negócio.</p>
       </div>
       
       <!-- Swiper Container -->
@@ -491,53 +491,53 @@ document.querySelector('#app').innerHTML = `
                 </div>
               </div>
             </div>
-            <h3 class="text-gold-primary font-sans font-extrabold text-xl leading-snug mb-2 tracking-wide text-left">MARKETING DE IMPACTO & MÁXIMA LIQUIDEZ</h3>
-            <p class="text-sm text-white leading-relaxed font-normal text-left">Com a maior vitrine digital de luxo da Praia Grande, conecto proprietários e compradores qualificados em tempo recorde.</p>
+            <h3 class="text-gold-primary font-sans font-extrabold text-xl leading-snug mb-2 tracking-wide text-left">MARKETING MODERNO & AGILIDADE NA VENDA</h3>
+            <p class="text-sm text-white leading-relaxed font-normal text-left">Com divulgação de alta performance no digital em Praia Grande, conecto proprietários e compradores em tempo recorde.</p>
           </div>
- 
-          <!-- Card 2: Highlight (Confidencialidade Absoluta) -->
+  
+          <!-- Card 2: Highlight (Atendimento Transparente) -->
           <div data-aos="fade-up" data-aos-delay="100" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-1 max-lg:w-[85%] bento-card bento-card-highlight">
             <div class="w-12 h-12 rounded-xl bg-gold-primary/15 border border-gold-primary/30 text-gold-primary flex items-center justify-center mb-5 shrink-0">
               <i data-lucide="shield-check" class="w-5 h-5"></i>
             </div>
-            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">DISCRIÇÃO E SIGILO OFF-MARKET</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Garanto confidencialidade absoluta para transações de alto escalão, protegendo seu patrimônio e privacidade em cada etapa.</p>
+            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">ATENDIMENTO TRANSPARENTE E SEGURO</h4>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Garanto clareza e transparência em todas as negociações, protegendo seus interesses e garantindo o melhor negócio.</p>
           </div>
- 
+  
           <!-- Card 3: Narrow (Segurança Jurídica) -->
           <div data-aos="fade-up" data-aos-delay="200" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-1 max-lg:w-[85%] bento-card bento-card-narrow-1">
             <div class="w-12 h-12 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center mb-5 shrink-0">
               <i data-lucide="check" class="w-5 h-5"></i>
             </div>
-            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">MINHA BLINDAGEM JURÍDICA PERSONALIZADA</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Protejo suas transações com minha própria auditoria jurídica e rigoroso compliance, assegurando sua total tranquilidade patrimonial.</p>
+            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">TOTAL SEGURANÇA E SUPORTE JURÍDICO</h4>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Protejo sua compra com assessoria jurídica rigorosa em cada contrato, garantindo tranquilidade jurídica completa do início ao fim.</p>
           </div>
- 
-          <!-- Card 4: Narrow (Rentabilidade) -->
+  
+          <!-- Card 4: Narrow (Custo-Benefício) -->
           <div data-aos="fade-up" data-aos-delay="300" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-1 max-lg:w-[85%] bento-card bento-card-narrow-2">
             <div class="w-12 h-12 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center mb-5 shrink-0">
               <i data-lucide="trending-up" class="w-5 h-5"></i>
             </div>
-            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">VALORIZAÇÃO PATRIMONIAL ATIVA</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Minha curadoria estratégica é focada em liquidez e valorização real no Canto do Forte, transformando metro quadrado em patrimônio sólido.</p>
+            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">EXCELENTE CUSTO-BENEFÍCIO</h4>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Selecione imóveis com excelente potencial de valorização em Praia Grande, garantindo a solidez do seu investimento.</p>
           </div>
- 
-          <!-- Card 5: Narrow (Off-Market) -->
+  
+          <!-- Card 5: Narrow (Oportunidades) -->
           <div data-aos="fade-up" data-aos-delay="400" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-1 max-lg:w-[85%] bento-card bento-card-narrow-3">
             <div class="w-12 h-12 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center mb-5 shrink-0">
               <i data-lucide="award" class="w-5 h-5"></i>
             </div>
-            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">ACESSO ANTECIPADO E OFF-MARKET</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Te garanto prioridade e acesso exclusivo a coberturas e mansões off-market antes que cheguem aos portais tradicionais.</p>
+            <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">OPORTUNIDADES EXCLUSIVAS</h4>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Garanto prioridade e acesso em primeira mão a ótimos imóveis em Praia Grande antes de irem a público.</p>
           </div>
- 
-          <!-- Card 6: Wide (Atendimento Boutique) -->
+  
+          <!-- Card 6: Wide (Curadoria sob Medida) -->
           <div data-aos="fade-up" data-aos-delay="500" class="swiper-slide bg-bg-card text-white p-6 md:p-7.5 rounded-2xl flex flex-col justify-start shadow-[0_10px_30px_rgba(0,0,0,0.15)] border border-border-gold relative overflow-hidden lg:col-span-2 lg:flex-col lg:items-start lg:justify-start lg:gap-5 max-lg:w-[85%] bento-card bento-card-wide-2">
             <div class="w-12 h-12 rounded-xl bg-gold-primary/10 border border-border-gold text-gold-primary flex items-center justify-center mb-5 shrink-0">
               <i data-lucide="users" class="w-5 h-5"></i>
             </div>
-            <h3 class="text-gold-primary font-sans font-extrabold text-xl leading-snug mb-2 tracking-wide text-left">CURADORIA EXCLUSIVA SOB MEDIDA</h3>
-            <p class="text-sm text-white leading-relaxed font-normal text-left">Realizo visitas privadas e faço o mapeamento cirúrgico de imóveis alinhados ao seu estilo de vida, com total discrição.</p>
+            <h3 class="text-gold-primary font-sans font-extrabold text-xl leading-snug mb-2 tracking-wide text-left">CURADORIA FOCADA NO SEU PERFIL</h3>
+            <p class="text-sm text-white leading-relaxed font-normal text-left">Realizo visitas personalizadas e faço o mapeamento dos imóveis ideais para o estilo de vida e orçamento da sua família.</p>
           </div>
         </div>
         <!-- Paginação (Bullets) -->
@@ -552,7 +552,7 @@ document.querySelector('#app').innerHTML = `
       <div data-aos="fade-up" class="text-center max-w-[750px] mx-auto mb-[70px] z-10 relative">
         <span class="text-gold-primary text-[13px] font-bold tracking-[0.25em] uppercase mb-4 block">Prova Social</span>
         <h2 class="text-[32px] md:text-[44px] font-extrabold mb-5 text-white tracking-tight leading-none">O QUE MEUS CLIENTES DIZEM</h2>
-        <p class="text-base text-slate-300 font-light">Experiências reais de quem encontrou o lar dos sonhos or realizou investimentos de alto padrão comigo.</p>
+        <p class="text-base text-slate-300 font-light">Experiências reais de quem encontrou o lar dos sonhos ou fez excelentes negócios comigo.</p>
       </div>
     </div>
  
@@ -603,12 +603,12 @@ document.querySelector('#app').innerHTML = `
       <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-15 items-center">
         <div data-aos="fade-right" class="relative z-2 max-lg:text-center">
           <span class="text-gold-primary text-[13px] font-bold tracking-[0.25em] uppercase mb-4 block">Sobre Mim</span>
-          <h2 class="text-[32px] md:text-[40px] font-extrabold mb-6 text-white tracking-tight leading-none">MINHA AUTORIDADE E COMPROMISSO DE ALTO PADRÃO</h2>
+          <h2 class="text-[32px] md:text-[40px] font-extrabold mb-6 text-white tracking-tight leading-none">MINHA EXPERIÊNCIA E COMPROMISSO COM VOCÊ</h2>
           <p class="text-base mb-5 font-light text-slate-300">
-            Com presença consolidada e autoridade inquestionável na Praia Grande, sou a referência definitiva em transações imobiliárias de alto padrão. Focado em inovação e alta performance, aplico as melhores estratégias de marketing digital imobiliário para garantir máxima liquidez a você, meu cliente.
+            Com presença consolidada na Praia Grande, sou especialista em conectar você a imóveis modernos e confortáveis. Focado em inovação, aplico as melhores estratégias de marketing digital imobiliário para garantir agilidade e excelentes negócios na compra ou venda de casas e apartamentos.
           </p>
           <p class="text-base mb-5 font-light text-slate-300">
-            Minha atuação é pautada por três pilares inegociáveis: confidencialidade absoluta, precisão jurídica e curadoria cirúrgica de oportunidades, proporcionando a você uma jornada imobiliária fluida, segura e de altíssima rentabilidade.
+            Minha atuação é pautada por três pilares: transparência absoluta, segurança jurídica e curadoria dos melhores imóveis, proporcionando a você uma jornada imobiliária fluida, segura e sem burocracias.
           </p>
           <div data-aos="fade-up" data-aos-delay="150" class="flex gap-7.5 my-9 border-y border-white/5 py-6 max-lg:justify-center max-sm:flex-col max-sm:gap-6">
             <div class="flex items-center gap-3 text-left">
@@ -647,8 +647,8 @@ document.querySelector('#app').innerHTML = `
         <div data-aos="fade-right" class="flex flex-col justify-between max-lg:gap-6">
           <div>
             <span class="text-gold-primary text-[13px] font-bold tracking-[0.25em] uppercase mb-4 block text-left">Contato Direto</span>
-            <h2 class="text-[32px] md:text-[40px] font-extrabold mb-4 text-white tracking-tight leading-none text-left">INICIE SUA CONSULTORIA EXCLUSIVA COMIGO</h2>
-            <p class="text-base font-light text-slate-300 text-left">Agende uma reunião privada comigo e tenha acesso à seleção de imóveis mais exclusiva da Praia Grande.</p>
+            <h2 class="text-[32px] md:text-[40px] font-extrabold mb-4 text-white tracking-tight leading-none text-left">FALE COMIGO E ENCONTRE SEU IMÓVEL</h2>
+            <p class="text-base font-light text-slate-300 text-left">Fale comigo e tenha acesso aos melhores imóveis à venda na Praia Grande.</p>
           </div>
           
           <div class="flex flex-col gap-4 mt-8">
@@ -678,7 +678,7 @@ document.querySelector('#app').innerHTML = `
               </div>
               <div class="mb-4 text-left">
                 <label for="c-phone" class="block text-[11px] text-gold-primary uppercase tracking-[0.08em] font-bold mb-2">WhatsApp</label>
-                <input type="tel" id="c-phone" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="(12) 34567-8910" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
+                <input type="tel" id="c-phone" class="w-full bg-bg-input border border-white/10 rounded-xl py-4 px-5 text-white font-sans text-sm font-medium transition-all duration-150 placeholder-[#888] focus:outline-none focus:border-gold-primary focus:bg-black focus:shadow-[0_0_10px_rgba(204,164,59,0.15)]" placeholder="Seu Número de Whatsapp" maxlength="15" pattern="\\(\\d{2}\\) \\d{5}-\\d{4}" title="Por favor, insira o WhatsApp no formato (XX) XXXXX-XXXX" required />
               </div>
               <div class="mb-4 text-left">
                 <label for="c-message" class="block text-[11px] text-gold-primary uppercase tracking-[0.08em] font-bold mb-2">Como posso te ajudar?</label>
@@ -713,7 +713,7 @@ document.querySelector('#app').innerHTML = `
           </svg>
           <div class="flex flex-col text-left">
             <span class="font-sans font-extrabold text-xl tracking-[0.05em] text-white leading-tight uppercase">JOHNY CORRETOR</span>
-            <span class="font-sans text-[10px] tracking-[0.25em] text-gold-primary font-semibold mt-0.5 uppercase">MERCADO DE LUXO</span>
+            <span class="font-sans text-[10px] tracking-[0.25em] text-gold-primary font-semibold mt-0.5 uppercase">CASAS & APARTAMENTOS</span>
           </div>
         </div>
       </div>
@@ -765,7 +765,7 @@ if (heroForm) {
     const whatsapp = document.getElementById('whatsapp').value;
 
     // Construct WhatsApp message
-    const message = `Olá, Johny! Acabei de enviar meus dados no seu site e gostaria de receber atendimento exclusivo para imóveis de alto padrão.\n\n` +
+    const message = `Olá, Johny! Acabei de enviar meus dados no seu site e gostaria de receber atendimento personalizado para encontrar meu novo imóvel.\n\n` +
       `*Meus Dados:*\n` +
       `• *Nome:* ${name}\n` +
       `• *WhatsApp:* ${whatsapp}`;
