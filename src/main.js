@@ -23,6 +23,7 @@ import {
 // Import images
 import johnyImg from './assets/johny_hero.png';
 import johnyHeroMobileImg from './assets/johny_hero_mobile.png';
+import johnyAboutMobileImg from './assets/johny-about-mobile.png';
 import johnyAboutImg from './assets/johny.jpg';
 import prop1Img from './assets/prop1.png';
 import prop2Img from './assets/prop2.png';
@@ -582,11 +583,21 @@ document.querySelector('#app').innerHTML = `
     </div>
   </section>
  
-  <section class="py-28 relative about-section-bg overflow-hidden" id="about">
+  <section class="py-28 relative about-section-bg overflow-hidden max-lg:pt-0 max-lg:pb-16" id="about">
     <!-- Overlay to ensure text readability -->
-    <div class="absolute inset-0 bg-black/60 lg:bg-gradient-to-r lg:from-black/80 lg:via-black/45 lg:to-black/10 z-1"></div>
+    <div class="absolute inset-0 max-lg:hidden lg:bg-gradient-to-r lg:from-black/80 lg:via-black/45 lg:to-black/10 z-1"></div>
     <!-- Background Watermark -->
     <div class="watermark-vertical wm-left z-1">JOHNY</div>
+
+    <!-- Mobile Image Block (Visible only on mobile/tablet) -->
+    <div class="relative w-full lg:hidden z-1 mb-8">
+      <picture class="w-full">
+        <source media="(max-width: 992px)" srcset="${johnyAboutMobileImg}" />
+        <img src="${johnyAboutMobileImg}" alt="Sobre Johny" class="w-full h-[40vh] object-cover object-top" />
+      </picture>
+      <!-- Premium bottom gradient fade to black -->
+      <div class="absolute inset-x-0 bottom-[-1px] h-26 bg-gradient-to-t from-black via-black/60 to-transparent z-2 pointer-events-none"></div>
+    </div>
  
     <div class="container mx-auto px-6 relative z-2">
       <div class="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-15 items-center">

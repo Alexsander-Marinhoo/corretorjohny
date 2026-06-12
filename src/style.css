@@ -466,15 +466,15 @@ body {
 
 /* About Section Responsive Background */
 .about-section-bg {
-  background-image: url('./assets/johny-about-mobile.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: var(--color-bg-primary);
 }
 
 @media (min-width: 1024px) {
   .about-section-bg {
     background-image: url('./assets/johny-about.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
