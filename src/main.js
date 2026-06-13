@@ -441,7 +441,34 @@ document.querySelector('#app').innerHTML = `
 
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 relative z-10">
         <!-- Insta Post 1 -->
-        <a data-aos="fade-up" data-aos-delay="0" href="https://www.instagram.com/corretorjohny/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+        <a data-aos="fade-up" data-aos-delay="0" href="https://www.instagram.com/p/DZRKAOSFynq/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+          <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
+            <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
+              <img src="${johnyAboutImg}" alt="Johny" />
+            </div>
+            <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
+              <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
+              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Ocian, PG</span>
+            </div>
+            <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
+          </div>
+          <div class="relative aspect-square overflow-hidden bg-black">
+            <img src="${prop1Img}" alt="Ocian, Praia Grande" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
+              <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
+            </div>
+          </div>
+          <div class="p-3 md:p-4 pb-0.5 text-left">
+            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 26 curtidas</span>
+          </div>
+          <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
+            <p class="text-slate-300 line-clamp-5 md:line-clamp-6"><strong>corretorjohny</strong> 🏠 50 mts Praia 🏖️<br>📍 Ocian | Praia Grande<br>💰 R$ 495.000<br>🛌 2 dormitórios (1 suíte)<br>🌅 Sacada gourmet com vista mar<br>🚗 1 vaga de garagem<br>🏊 Piscina e lazer completo</p>
+            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 5 DIAS</span>
+          </div>
+        </a>
+
+        <!-- Insta Post 2 -->
+        <a data-aos="fade-up" data-aos-delay="100" href="https://www.instagram.com/p/DZWKfVflzea/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
           <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
             <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
               <img src="${johnyAboutImg}" alt="Johny" />
@@ -453,76 +480,49 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
           <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop1Img}" alt="Splendido Residences" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <img src="${prop2Img}" alt="Canto do Forte, Praia Grande" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
               <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
             </div>
           </div>
           <div class="p-3 md:p-4 pb-0.5 text-left">
-            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 1.204 curtidas</span>
+            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 11 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Lindo apartamento mobiliado e decorado a poucos metros da praia no Canto do Forte. Conforto, modernidade e localização excelente. Agende sua visita comigo no link da bio! #PraiaGrande #ImovelModerno</p>
-            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 2 DIAS</span>
-          </div>
-        </a>
-
-        <!-- Insta Post 2 -->
-        <a data-aos="fade-up" data-aos-delay="100" href="https://www.instagram.com/corretorjohny/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
-          <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
-            <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
-              <img src="${johnyAboutImg}" alt="Johny" />
-            </div>
-            <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
-              <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
-              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Guilhermina, PG</span>
-            </div>
-            <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
-          </div>
-          <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop2Img}" alt="Lumière Residence" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
-            <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
-              <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
-            </div>
-          </div>
-          <div class="p-3 md:p-4 pb-0.5 text-left">
-            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 874 curtidas</span>
-          </div>
-          <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Apartamento moderno de 2 dormitórios com varanda gourmet na Guilhermina. Ideal para quem busca praticidade e lazer completo. Entregue com minha assessoria jurídica. #Guilhermina #PraiaGrande</p>
+            <p class="text-slate-300 line-clamp-5 md:line-clamp-6"><strong>corretorjohny</strong> 🛌 3 dormitórios (2suítes)<br>🚗 2 Vagas<br>📍 Canto do Forte - Praia Grande<br>💰 R$ 5.800<br>🔑 Creci 249849-F</p>
             <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 3 DIAS</span>
           </div>
         </a>
 
         <!-- Insta Post 3 -->
-        <a data-aos="fade-up" data-aos-delay="200" href="https://www.instagram.com/corretorjohny/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+        <a data-aos="fade-up" data-aos-delay="200" href="https://www.instagram.com/p/DZWM-IxF7F2/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
           <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
             <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
               <img src="${johnyAboutImg}" alt="Johny" />
             </div>
             <div class="flex flex-col ml-2 md:ml-3 grow text-left min-w-0">
               <span class="text-xs md:text-[13px] font-bold text-white leading-none truncate">corretorjohny</span>
-              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Aviação, PG</span>
+              <span class="text-[9px] md:text-[10px] text-gold-primary leading-none mt-0.5 truncate">Canto do Forte, PG</span>
             </div>
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
           <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop3Img}" alt="Infinity Sea Concept" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <img src="${prop3Img}" alt="Canto do Forte, Praia Grande" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
               <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
             </div>
           </div>
           <div class="p-3 md:p-4 pb-0.5 text-left">
-            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 956 curtidas</span>
+            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 58 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Casa moderna em condomínio fechado na Aviação. Segurança para a família, quintal privativo e excelente iluminação. Vamos agendar uma visita? #Aviacao #PraiaGrande</p>
-            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 5 DIAS</span>
+            <p class="text-slate-300 line-clamp-5 md:line-clamp-6"><strong>corretorjohny</strong> 💰 R$ 490 mil<br>📍 Canto do Forte – Praia Grande<br>🛌 2 dormitórios (1 suíte)<br>🚗 1 vaga de garagem<br>💵 Condomínio: R$ 629/mês<br>📙 IPTU: R$ 352/mês</p>
+            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 3 DIAS</span>
           </div>
         </a>
 
         <!-- Insta Post 4 -->
-        <a data-aos="fade-up" data-aos-delay="300" href="https://www.instagram.com/corretorjohny/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+        <a data-aos="fade-up" data-aos-delay="300" href="https://www.instagram.com/p/DZGw84kl01y/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
           <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
             <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
               <img src="${johnyAboutImg}" alt="Johny" />
@@ -534,17 +534,17 @@ document.querySelector('#app').innerHTML = `
             <span class="text-[#666] text-xs cursor-pointer ml-auto hidden sm:inline">&bull;&bull;&bull;</span>
           </div>
           <div class="relative aspect-square overflow-hidden bg-black">
-            <img src="${prop4Img}" alt="Golden Gate Concept" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
+            <img src="${prop4Img}" alt="Tupi, Praia Grande" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104" />
             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-150 z-5">
               <span class="text-[10px] md:text-xs font-extrabold text-gold-primary tracking-[0.05em] flex items-center gap-1 md:gap-1.5 border border-gold-primary py-1.5 px-3 md:py-2 md:px-4 bg-black/80"><i data-lucide="camera" class="w-3.5 h-3.5"></i> VER NO INSTA</span>
             </div>
           </div>
           <div class="p-3 md:p-4 pb-0.5 text-left">
-            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 1.420 curtidas</span>
+            <span class="text-[11px] md:text-xs font-bold text-white">❤️ 6 curtidas</span>
           </div>
           <div class="p-3 md:p-4 pt-0.5 pb-3 text-left text-[11px] md:text-xs leading-relaxed">
-            <p class="text-slate-300 line-clamp-2 md:line-clamp-3"><strong>corretorjohny</strong> Sobrado amplo e planejado a poucas quadras do mar na Tupi. Perfeito para morar ou veranear com conforto e espaço. Fale comigo! #Tupi #PraiaGrande</p>
-            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 1 SEMANA</span>
+            <p class="text-slate-300 line-clamp-5 md:line-clamp-6"><strong>corretorjohny</strong> 🛌 2 dormitórios<br>🚗 2 vagas<br>💰 R$ 585 mil 💰<br>📍 Tupi - Praia Grande<br>🏖️ 400 mts da praia 🏖️<br>💵 Condomínio R$ 696 | IPTU R$ 461</p>
+            <span class="block text-[8px] md:text-[9px] text-[#666] mt-2 tracking-[0.05em]">HÁ 57 MINUTOS</span>
           </div>
         </a>
       </div>
