@@ -495,7 +495,7 @@ document.querySelector('#app').innerHTML = `
         </a>
 
         <!-- Insta Post 3 -->
-        <a data-aos="fade-up" data-aos-delay="200" href="https://www.instagram.com/p/DZWM-IxF7F2/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+        <a data-aos="fade-up" data-aos-delay="200" href="https://www.instagram.com/corretorjohny/p/DZWM-lxF7F2/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
           <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
             <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
               <img src="${johnyAboutImg}" alt="Johny" />
@@ -522,7 +522,7 @@ document.querySelector('#app').innerHTML = `
         </a>
 
         <!-- Insta Post 4 -->
-        <a data-aos="fade-up" data-aos-delay="300" href="https://www.instagram.com/p/DZGw84kl01y/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
+        <a data-aos="fade-up" data-aos-delay="300" href="https://www.instagram.com/corretorjohny/p/DZgW84kl01y/" target="_blank" class="flex flex-col rounded-2xl overflow-hidden text-white insta-card group">
           <div class="flex items-center p-2.5 md:p-3 border-b border-white/5">
             <div class="w-7 h-7 md:w-8 md:h-8 rounded-full overflow-hidden border border-gold-primary shrink-0">
               <img src="${johnyAboutImg}" alt="Johny" />
