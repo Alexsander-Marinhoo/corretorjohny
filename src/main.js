@@ -293,7 +293,7 @@ document.querySelector('#app').innerHTML = `
           <i data-lucide="award" class="w-3.5 h-3.5 text-gold-primary"></i> CURADORIA DE IMÓVEIS NA PRAIA GRANDE
         </div>
         <h1 data-aos="fade-up" data-aos-delay="100" class="text-[38px] lg:text-[56px] font-extrabold leading-none tracking-tight mb-5 text-white">
-          SEU NOVO LAR EM <span class="text-gold-primary">PRAIA GRANDE</span>
+          SEU NOVO LAR NA <span class="text-gold-primary">PRAIA GRANDE</span>
         </h1>
         <p data-aos="fade-up" data-aos-delay="200" class="text-base mb-7.5 max-w-[580px] font-light text-slate-300 max-lg:mx-auto">
           As melhores casas e apartamentos modernos em toda a Praia Grande. Seleção de imóveis prontos, confortáveis e com total segurança jurídica para sua família.
@@ -587,7 +587,7 @@ document.querySelector('#app').innerHTML = `
               </div>
             </div>
             <h3 class="text-gold-primary font-sans font-extrabold text-xl leading-snug mb-2 tracking-wide text-left">MARKETING MODERNO & AGILIDADE NA VENDA</h3>
-            <p class="text-sm text-white leading-relaxed font-normal text-left">Com divulgação de alta performance no digital em Praia Grande, conecto proprietários e compradores em tempo recorde.</p>
+            <p class="text-sm text-white leading-relaxed font-normal text-left">Com divulgação de alta performance no digital na Praia Grande, conecto proprietários e compradores em tempo recorde.</p>
           </div>
   
           <!-- Card 2: Highlight (Atendimento Transparente) -->
@@ -614,7 +614,7 @@ document.querySelector('#app').innerHTML = `
               <i data-lucide="trending-up" class="w-5 h-5"></i>
             </div>
             <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">EXCELENTE CUSTO-BENEFÍCIO</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Selecione imóveis com excelente potencial de valorização em Praia Grande, garantindo a solidez do seu investimento.</p>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Selecione imóveis com excelente potencial de valorização na Praia Grande, garantindo a solidez do seu investimento.</p>
           </div>
   
           <!-- Card 5: Narrow (Oportunidades) -->
@@ -623,7 +623,7 @@ document.querySelector('#app').innerHTML = `
               <i data-lucide="award" class="w-5 h-5"></i>
             </div>
             <h4 class="text-base text-gold-primary font-sans font-extrabold leading-snug mb-2 tracking-wide text-left">OPORTUNIDADES EXCLUSIVAS</h4>
-            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Garanto prioridade e acesso em primeira mão a ótimos imóveis em Praia Grande antes de irem a público.</p>
+            <p class="text-[13.5px] text-white leading-relaxed font-normal text-left">Garanto prioridade e acesso em primeira mão a ótimos imóveis na Praia Grande antes de irem a público.</p>
           </div>
   
           <!-- Card 6: Wide (Curadoria sob Medida) -->
